@@ -49,6 +49,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+//overview
+$route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['register'] = 'home/register_';
+$route['agencysignin'] = 'home/agencysignin_';
+$route['signin'] = 'home/signin_';
+$route['contactus'] = 'home/contactus_';
+
+//to sale module 
+$route['sale/commercial-properties'] = 'forsale/commercialproperties_';
+$route['sale/flats-apartment'] = 'forsale/flatsapartment_';
+$route['sale/houses'] = 'forsale/houses_';
+$route['sale/land'] = 'forsale/land_';
+
+//to rent module 
+$route['rent/affordable-rentals'] = 'forrent/affordablerentals_';
+$route['rent/flats-apartment'] = 'forrent/flatsapartment_';
+$route['rent/houses'] = 'forrent/houses_';
+$route['rent/commercial-properties'] = 'forrent/commercialproperties_';
+$route['rent/bedsitter'] = 'forrent/bedsitter_';
+
+
+//advice module 
+$route['advice/blog'] = 'foradvice/blog_';
+$route['advice/ideas'] = 'foradvice/ideas_';
+$route['advice/places'] = 'foradvice/places_';
+
+
+//new project module 
+$route['projects/residential'] = 'newprojects/residential_';
+$route['projects/commercial'] = 'newprojects/commercial_';
+
+//add property module 
+$route['addproperty/add-property'] = 'newproperty/addproperty_';
+
+
+//account setting  module 
+$route['account/requests'] = 'account/requests_';
+$route['account/favourites'] = 'account/favourites_';
+$route['account/my-properties'] = 'account/myproperties_';
+$route['account/my-profile'] = 'account/myprofile_';
+$route['account/account-setting'] = 'account/accountsetting_';
+
+
+
+
