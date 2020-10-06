@@ -58,6 +58,7 @@ $route['agencysignin'] = 'home/agencysignin_';
 $route['signin'] = 'home/signin_';
 $route['resetpassword'] = 'home/resetpassword_';
 $route['contactus'] = 'home/contactus_';
+$route['aboutus'] = 'home/aboutus_';
 
 //to sale module 
 $route['sale/commercial-properties'] = 'forsale/commercialproperties_';
@@ -88,12 +89,15 @@ $route['addproperty/add-property'] = 'newproperty/addproperty_';
 
 
 //account setting  module 
-$route['account/requests'] = 'account/requests_';
-$route['account/favourites'] = 'account/favourites_';
+$route['account/my-requests'] = 'account/requests_';
+$route['account/my-favourites'] = 'account/favourites_';
 $route['account/my-properties'] = 'account/myproperties_';
 $route['account/my-profile'] = 'account/myprofile_';
 $route['account/account-setting'] = 'account/accountsetting_';
-
+$route['account/change-password'] = 'account/changepassword_';
+$route['account/dashboard'] = 'account/dashboard_';
+$route['account/payment'] = 'account/payment_';
+$route['account/invoice'] = 'account/invoice_';
 
 
 

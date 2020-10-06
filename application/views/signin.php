@@ -5,7 +5,7 @@
         <div class="text-heading text-center">
             <div class="container">
                 <h1>Login</h1>
-                <h2><a href="index.html">Home </a> &nbsp;/&nbsp; login</h2>
+                <h2><a href="<?php echo base_url(); ?>home">Home </a> &nbsp;/&nbsp; login</h2>
             </div>
         </div>
     </section>
@@ -47,8 +47,10 @@
                     <a href="#0" class="social_bt google">Login with Google</a>
                 </div>
             </form>
+            </div>
         </div>
     </div>
     <!-- END SECTION LOGIN -->
+    </body>
 
       

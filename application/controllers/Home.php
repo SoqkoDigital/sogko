@@ -78,14 +78,6 @@ class Home extends CI_Controller {
         }
 
 
-    public function agencysignin_(){
-		 $this->load->view('css_styling.php');
-		 $this->load->view('header');
-	     $this->load->view('agencysignin');
-	     $this->load->view('footer');
-		 $this->load->view('js_styling.php');
-	 
-    }
 
      public function signin_(){
 
@@ -139,16 +131,6 @@ class Home extends CI_Controller {
 	 
     }
 
-     public function contactus_(){
-		 $this->load->view('css_styling.php');
-		 $this->load->view('header');
-	     $this->load->view('contactus');
-	     $this->load->view('footer');
-		 $this->load->view('js_styling.php');
-	 
-    }
-
-
      public function resetpassword_(){
 		 $this->load->view('css_styling.php');
 		 $this->load->view('header');
@@ -164,4 +146,25 @@ class Home extends CI_Controller {
 		$this->session->sess_destroy();
 		redirect(base_url().'Home'); 
 	}
+
+
+	public function contactus_(){
+		 $this->load->view('css_styling.php');
+		 $this->load->view('header');
+	     $this->load->view('contactus');
+	     $this->load->view('footer');
+		 $this->load->view('js_styling.php');
+	 
+    }
+
+
+    public function aboutus_(){
+		 $this->load->view('css_styling.php');
+		 $this->load->view('header');
+	     $this->load->view('aboutus');
+	     $this->load->view('footer');
+		 $this->load->view('js_styling.php');
+	 
+    }
+
 }

@@ -13,54 +13,87 @@ class Account extends CI_Controller {
    public function requests_()
 	{
 
-		$this->load->view('css_styling.php');
-		$this->load->view('header');
-		$this->load->view('account/requests');
-		$this->load->view('footer');
-		$this->load->view('js_styling.php');
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
+		$this->load->view('account/my-requests');
+		$this->load->view('account/profile_footer');
 	}
 
 	public function favourites_()
 	{
 
-		$this->load->view('css_styling.php');
-		$this->load->view('header');
-		$this->load->view('account/favourites');
-		$this->load->view('footer');
-		$this->load->view('js_styling.php');
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
+		$this->load->view('account/my-favourites');
+		$this->load->view('account/profile_footer');
 	}
 
 
 	public function myproperties_()
 	{
 
-		$this->load->view('css_styling.php');
-		$this->load->view('header');
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
 		$this->load->view('account/my-properties');
-		$this->load->view('footer');
-		$this->load->view('js_styling.php');
+		$this->load->view('account/profile_footer');
 	}
 
 
 	public function myprofile_()
 	{
 
-		$this->load->view('css_styling.php');
-		$this->load->view('header');
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
 		$this->load->view('account/my-profile');
-		$this->load->view('footer');
-		$this->load->view('js_styling.php');
+		$this->load->view('account/profile_footer');
 	}
 
 
 	public function accountsetting_()
 	{
 
-		$this->load->view('css_styling.php');
-		$this->load->view('header');
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
 		$this->load->view('account/account-setting');
-		$this->load->view('footer');
-		$this->load->view('js_styling.php');
+		$this->load->view('account/profile_footer');
 	}
+
+
+	public function changepassword_()
+	{
+
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
+		$this->load->view('account/change-password');
+		$this->load->view('account/profile_footer');
+	}
+
+	public function dashboard_()
+	{
+
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
+		$this->load->view('account/dashboard');
+		$this->load->view('account/profile_footer');
+	}
+
+	public function payment_()
+	{
+
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
+		$this->load->view('account/payment');
+		$this->load->view('account/profile_footer');
+	}
+
+	public function invoice_()
+	{
+
+		$this->load->view('account/profile_header');
+		$this->load->view('account/leftmenu');
+		$this->load->view('account/invoice');
+		$this->load->view('account/profile_footer');
+	}
+
 
 }

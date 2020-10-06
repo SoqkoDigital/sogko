@@ -38,18 +38,16 @@
                                 <h3>Navigation</h3>
                                 <div class="nav-footer">
                                     <ul>
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="properties-right-sidebar.html">Properties Right</a></li>
-                                        <li><a href="properties-full-list.html">Properties List</a></li>
-                                        <li><a href="properties-details.html">Property Details</a></li>
-                                        <li class="no-mgb"><a href="agents-listing-grid.html">Agents Listing</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>home">Home</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>sale/commercial-properties">For Sale</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>rent/affordable-rentals">To Rent</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>advice/blog">Advice</a></li>
                                     </ul>
                                     <ul class="nav-right">
-                                        <li><a href="agent-details.html">Agents Details</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                        <li class="no-mgb"><a href="contact-us.html">Contact Us</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>projects/residential">New Project</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>addproperty/add-property">Add Property</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>aboutus">About Us</a></li>
+                                        <li class="no-mgb"><a href="<?php echo base_url(); ?>contactus">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>

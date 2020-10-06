@@ -1,9 +1,10 @@
+
 <div class="col-lg-9 col-md-12 col-xs-12 pl-0 user-dash2">
 <div class="my-properties">
     <table class="table-responsive">
         <thead>
             <tr>
-                <th class="pl-2">My Properties</th>
+                <th class="pl-2">Top Property</th>
                 <th class="p-0"></th>
                 <th>Date Added</th>
                 <th>Views</th>

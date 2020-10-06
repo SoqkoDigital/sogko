@@ -16,8 +16,6 @@
                             <ul class="d-flex">
                                 <li><a href="<?php echo base_url(); ?>register"><i class="fa fa-sign-in"></i> Register</a> <span class="vertical-mline"></span></li>
                                 <li><a href="<?php echo base_url(); ?>signin"><i class="fa fa-user"></i> Login</a> <span class="vertical-mline"></span> </li>
-                                <li><a href="<?php echo base_url(); ?>agencysignin"><i class="fa fa-user"></i> Agency login</a> <span class="vertical-mline"></span> </li>
-                                <li><a href="<?php echo base_url(); ?>contactus">Contact us</a></li>
                             </ul>
                         </div>
                         <?php elseif($this->session->userdata('msg')=="logged_in"): ?>
@@ -26,11 +24,11 @@
                                  My Account
                               </button>
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/requests">Requests</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/my-requests">Requests</a>
                                 <a class="dropdown-item" href="<?php echo base_url(); ?>account/favourites">Favourites</a>
                                 <a class="dropdown-item" href="<?php echo base_url(); ?>account/my-properties">My Properties</a>
                                 <a class="dropdown-item" href="<?php echo base_url(); ?>account/my-profile">My Profile</a> 
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/account-setting">Account Setting</a> 
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/my-profile">Account Setting</a> 
                                 <a class="dropdown-item" href="<?php echo base_url('Home/logout'); ?>">Log out</a> 
                               </div>
                         </div>
