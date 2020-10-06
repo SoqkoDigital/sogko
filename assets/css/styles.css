@@ -15547,7 +15547,7 @@ section.pricing-table {
 /*---------------------------------------*/
 #login .login,
 #register .login {
-  width: 430px;
+  width: 500px;
   padding: 45px 60px 60px;
   overflow-y: auto;
   background-color: #fff;

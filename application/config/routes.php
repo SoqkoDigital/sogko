@@ -56,6 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['register'] = 'home/register_';
 $route['agencysignin'] = 'home/agencysignin_';
 $route['signin'] = 'home/signin_';
+$route['resetpassword'] = 'home/resetpassword_';
 $route['contactus'] = 'home/contactus_';
 
 //to sale module 

@@ -323,5 +323,11 @@
 </div>
 </section>
 <!-- END SECTION SUBMIT PROPERTY -->
+<script>
+    $(".dropzone").dropzone({
+        dictDefaultMessage: "<i class='fa fa-cloud-upload'></i> Click here or drop files to upload",
+    });
+
+</script>
 
 

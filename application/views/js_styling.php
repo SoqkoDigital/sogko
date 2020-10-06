@@ -45,6 +45,7 @@
 
         <!-- MAIN JS -->
         <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
+        <script src="<?php echo base_url(); ?>assets/js/dropzone.js"></script>
 
     </div>
     <!-- Wrapper / End -->

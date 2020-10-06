@@ -11,38 +11,22 @@
                     <div class="top-info hidden-sm-down">
                     </div>
                     <div class="top-social hidden-sm-down ">
-                        <?php if($this->session->userdata('msg')!="logged_in"): ?>
                         <div class="login-wrap">
                             <ul class="d-flex">
                                 <li><a href="<?php echo base_url(); ?>register"><i class="fa fa-sign-in"></i> Register</a> <span class="vertical-mline"></span></li>
                                 <li><a href="<?php echo base_url(); ?>signin"><i class="fa fa-user"></i> Login</a> <span class="vertical-mline"></span> </li>
                                 <li><a href="<?php echo base_url(); ?>agencysignin"><i class="fa fa-user"></i> Agency login</a> <span class="vertical-mline"></span> </li>
-                                <li><a href="<?php echo base_url(); ?>contactus">Contact us</a></li>
+                                <li><a href="<?php echo base_url(); ?>contactus">Contact us</a> <span class="vertical-mline"></span></li>
                             </ul>
                         </div>
-                        <?php elseif($this->session->userdata('msg')=="logged_in"): ?>
-                         <div class="dropdown">
-                              <button class="btn-dropdown  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                 My Account
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/requests">Requests</a>
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/favourites">Favourites</a>
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/my-properties">My Properties</a>
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/my-profile">My Profile</a> 
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>account/account-setting">Account Setting</a> 
-                                <a class="dropdown-item" href="<?php echo base_url('Home/logout'); ?>">Log out</a> 
-                              </div>
-                        </div>
-                        <?php endif; ?>
                         <div class="dropdown">
                             <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownlang" data-toggle="dropdown" aria-haspopup="true">
-                                <img src="<?php echo base_url(); ?>assets/images/en.png" alt="lang" /> English
+                                <img src="assets/images/en.png" alt="lang" /> English
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownlang">
-                                <li><img src="<?php echo base_url(); ?>assets/images/fr.png" alt="lang" />France</li>
-                                <li><img src="<?php echo base_url(); ?>assets/images/de.png" alt="lang" /> German</li>
-                                <li><img src="<?php echo base_url(); ?>assets/images/it.png" alt="lang" />Italy</li>
+                                <li><img src="assets/images/fr.png" alt="lang" />France</li>
+                                <li><img src="assets/images/de.png" alt="lang" /> German</li>
+                                <li><img src="assets/images/it.png" alt="lang" />Italy</li>
                             </ul>
                         </div>
                     </div>
@@ -115,6 +99,21 @@
                                         </ul>
                                     </li>
                                      <li><a href="<?php echo base_url(); ?>addproperty/add-property">Add Property</a>
+                                    </li>
+                                    <li><a href="#">My Account</a>
+                                        <ul>
+                                            <li><a href="<?php echo base_url(); ?>account/requests">Requests</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url(); ?>account/favourites">Favourites</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url(); ?>account/my-properties">My Properties</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url(); ?>account/my-profile">My Profile</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url(); ?>account/account-setting">Account Setting</a>
+                                            </li>
+                                            <!-- <li><a href="#">Log out</a></li> -->
+                                        </ul>
                                     </li>
                             </ul>
                         </nav>
